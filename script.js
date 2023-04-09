@@ -15,5 +15,5 @@ getquote(api_url);
 		window.open("https://twitter.com/intent/tweet?text=" + quote.innerHTML + "--- by" + author.innerHTML, "Tweet window", "width=600, height=300");
 	}
 	function share(){
-		window.open("https://facebook.com/intent/share?text=" + quote.innerHTML + "--- by" + author.innerHTML, "share window", "width=600, height=300");
+		window.open("https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v16.0" + quote.innerHTML + "--- by" + author.innerHTML, "share window", "width=600, height=300");
 	}
