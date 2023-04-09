@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Playfair Display', serif;
+}
+
+body{
+	background: #1e5469;
+}
+
+.quote-box{
+	background: #fff;
+	width: 700px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2{
+	font-size: 32px;
+	margin-bottom: 40px;
+	position: relative;
+	color: #1e5469;
+}
+.quote-box h2::after{
+	content: '';
+	width: 200px;
+	height: 2px;
+	border-radius: 3px;
+	background: #1e5469;
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.quote-box blockquote{
+	font-size: 24px;
+	min-height: 110px;
+}
+.quote-box blockquote::before, .quote-box blockquote::after{
+	content: '"';
+}
+
+.quote-box span{
+	display: block;
+	margin-top: 10px;
+	float: right;
+	font-style: oblique;
+	position: relative;
+}
+
+.quote-box span::before{
+	content: '';
+	width: 20px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: -32px;
+	transform: translate(10%, -50%);
+	background: #1e5469;
+}
+
+.quote-box div{
+ width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.quote-box button{
+	background: #f3f3f3;
+	color: #333;
+	width: 150px;
+	height: 50px;
+	border: 1px solid #1e5469;
+	border-radius: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.quote-box div{
+	border-top: 1px solid #ccc;
+}
+
+.quote-box button img{
+	width: 20px;
+	margin-right: 10px;
+}
+.quote-box button:nth-child(2){
+ background: #1e5469;
+	color: #fff;
+	width: 200px;
+ height: 50px;
+}
+
+.quote-box button:hover:nth-child(2){
+ background: #f3f3f3;
+	color: #333;
+	font-weight: bolder;
+	transition: 0.5s ease-in-out;
+}
+.quote-box button:hover:nth-child(1){
+ background: #1e5469;
+	color: #fff;
+	transition: 0.5s ease-in-out;
+}
+.quote-box button:hover:nth-child(3){
+ background: #1e5469;
+	color: #fff;
+	transition: 0.5s ease-in-out;
+}
